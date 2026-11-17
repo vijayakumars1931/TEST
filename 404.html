@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Spadeeventzz</title>
+  <meta name="description" content="This page missed the guest list. Head back to Spadeeventzz.">
+  <meta name="theme-color" content="#080706">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/legal.css">
+  <style>
+    .notfound {
+      display: flex;
+      align-items: center;
+      min-height: 82svh;
+      padding: 150px 0 90px;
+    }
+    .notfound .code {
+      font-family: var(--font-display);
+      font-size: clamp(96px, 20vw, 200px);
+      font-weight: 600;
+      line-height: 0.8;
+      letter-spacing: -0.06em;
+      color: var(--orange);
+    }
+    .notfound h1 {
+      margin-top: 28px;
+      font-size: clamp(34px, 4.6vw, 58px);
+      line-height: 1.02;
+    }
+    .notfound p {
+      max-width: 44ch;
+      margin-top: 18px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+    .notfound-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="legal-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 16 16" fill="currentColor"><path d="M7.5 0a.5.5 0 0 1 .5.5v1.2C9.5 2.8 12 4.9 12 7.5c0 1.4-1 2.5-2.4 2.5-.6 0-1.1-.2-1.6-.5.5 3 2.3 4.2 3.4 4.6.3.1.6.3.6.7v.7c0 .3-.2.5-.5.5h-7a.5.5 0 0 1-.5-.5v-.7c0-.4.3-.6.6-.7 1.1-.4 2.9-1.6 3.4-4.6-.5.3-1 .5-1.6.5C3 10 2 8.9 2 7.5c0-2.6 2.5-4.7 4-5.8V.5a.5.5 0 0 1 .5-.5h1z"/></svg>
+        </span>
+        <span class="brand-word">
+          <strong>Spade<span>eventzz</span></strong>
+          <small>Event design &amp; production</small>
+        </span>
+      </a>
+      <nav aria-label="Legal navigation"><a href="index.html">← Back to site</a></nav>
+    </div>
+  </header>
+
+  <main class="notfound">
+    <div class="container">
+      <p class="eyebrow">Wrong turn</p>
+      <p class="code" aria-hidden="true">404</p>
+      <h1>This page missed <em>the guest list.</em></h1>
+      <p>The link may have moved, expired, or never existed. The good news: the party is still over on the main page.</p>
+      <div class="notfound-actions">
+        <a class="btn btn-primary" href="index.html">Back to Spadeeventzz <span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="btn btn-outline" href="index.html#contact">Plan an event <span class="arrow" aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="legal-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> Spadeeventzz. All rights reserved.</span>
+      <span>Made with ♠ in Hyderabad</span>
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
